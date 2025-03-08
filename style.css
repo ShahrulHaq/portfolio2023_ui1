@@ -1,0 +1,470 @@
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Kode+Mono:wght@400..700&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+/*
+  //wallet
+
+  font-family: "Space Mono", monospace;
+  font-family: "IBM Plex Mono", monospace;
+  --one: #9a94b0;
+  --subMain: #f6f2f1;
+  --three: #466dd2;
+  --four: #dddde5;
+  --five: #236476;
+  --six: #7ebe92;
+
+  --firstClr: #c7dddc;
+  --secondClr: #55809a;
+  --hoverClr: #108586;
+  --fourthClr: #295568;
+  --fifthClr: #084949;
+  --obejective: #1c1d22;
+
+  --subMain: #f2f7f6;
+
+  
+  --main: #033043;
+  --subMain: #E9E3D5;
+  --secondary: #0A2723;
+  --tertiary: #FDA521;
+  --obejective: #1c1d22;
+
+*/
+/*-------------------------------nav bar-------------------------------*/
+
+:root {
+  --main: #033043;
+  --hoverClr: #108586;
+  --subMain: #f2f7f6;
+  --secondary: #0A2723;
+  --tertiary: #FDA521;
+  --obejective: #1c1d22;
+
+
+  --comment: #00a585;
+  --curly: #ffe600;
+  --bracket: #22bcf2;
+  --functionMain: #1256cc;
+  --functionSec: #ff6700;
+  --keyMain: #7fdd05;
+  --keySec: #7ee8c7;
+  --varMain: #d89dff;
+  --varSec: #b568f2;
+  --colon: #ffb000;
+  --comma: #82c58b;
+  --boxBracket: #ff67ff;
+  --valueMain: #cc2782;
+  --valueSec: #dd8f37;
+}
+
+* {
+  margin: 0;
+  padding: 0px;
+  cursor: default;
+}
+
+body {
+  background-color: var(--subMain);
+  font-family: "IBM Plex Mono", monospace;
+
+  cursor: url(./icon/remember_me.png) 15 15, move;
+}
+
+button {
+  font-family: "IBM Plex Mono", monospace;
+}
+
+input,
+textarea {
+  font-family: "IBM Plex Mono", monospace;
+  margin-block: 5px;
+  padding: 10px 15px;
+  background-color: var(--subMain);
+  border: none;
+  outline: none;
+}
+
+body::-webkit-scrollbar {
+}
+
+section {
+  font-family: "IBM Plex Mono", monospace;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.content {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+}
+/*============================================================= nav bar ==============================================================*/
+
+nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  height: auto;
+}
+
+nav h1 {
+  color: var(--main);
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+}
+
+nav ul a {
+  text-decoration: none;
+  color: var(--secondary);
+  padding: 10px;
+  cursor: default;
+}
+
+nav ul a:hover {
+  color: var(--hoverClr);
+}
+
+/*============================================================= hero ==============================================================*/
+#hero {
+  height: 100vh;
+}
+
+.home_page {
+  flex-direction: row;
+  height: 100%;
+  width: 60%;
+}
+
+.heroIntro {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  text-align: left;
+  margin-bottom: 20px;
+}
+
+.heroIntro img {
+  margin-right: 20px;
+}
+
+#bottom_stuffs {
+  margin-top: 20px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.socialMedia {
+  text-align: center;
+}
+
+.socialMedia a {
+  text-decoration: none;
+  color: var(--obejective);
+  font-size: 22px;
+  margin: 5px;
+}
+
+.textBotton button {
+  padding: 10px 20px;
+  background-color: var(--secondary);
+  color: var(--subMain);
+  border: none;
+}
+
+.textBotton button:hover,
+.socialMedia a i:hover {
+  color: var(--hoverClr);
+}
+
+.textBotton button:active,
+.socialMedia a i:active {
+  color: var(--main);
+}
+
+button i {
+  background-color: var(--secondary);
+}
+
+/*============================================================= about ==============================================================*/
+#about {
+  background-color: var(--secondary);
+}
+
+#IDE_theme {
+  font-family: "Space Mono", monospace;
+  font-size: 13px;
+  width: fit-content;
+  height:85%;
+}
+
+#IDE_scroll::-webkit-scrollbar {
+  width: 4px;
+}
+#IDE_scroll::-webkit-scrollbar-thumb {
+  background: var(--main);
+  border-radius: 10px;
+}
+#IDE_scroll::-webkit-scrollbar-thumb:hover {
+  background: var(--keyMain);
+}
+
+#IDE_scroll {
+  overflow-y: scroll;
+  padding-inline: 20px;
+  max-height: 100%;
+  margin-block: 30px;
+
+}
+
+.functionMain {
+  color: var(--functionMain);
+}
+
+.functionSec {
+  color: var(--functionSec);
+}
+
+.comment {
+  color: var(--comment);
+}
+
+.valueMain {
+  color: var(--valueMain);
+}
+
+.valueSec {
+  color: var(--valueSec);
+}
+
+.keyMain {
+  color: var(--keyMain);
+}
+
+.keySec {
+  color: var(--keySec);
+}
+
+.varMain {
+  color: var(--varMain);
+}
+
+.varSec {
+  color: var(--varSec);
+}
+
+.curly {
+  color: var(--curly);
+}
+
+.bracket {
+  color: var(--bracket);
+}
+
+.boxBracket {
+  color: var(--boxBracket);
+}
+
+.colon {
+  color: var(--colon);
+}
+
+.comma {
+  color: var(--comma);
+}
+
+.bigComment {
+  color: wheat;
+}
+
+/*============================================================= skills ==============================================================*/
+
+#skillContent {
+  height: 100vh;
+  flex-direction: column;
+
+  
+}
+
+#skillBoxes {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  font-size: 13px;
+  overflow-y: scroll;
+
+  height: 70%;
+
+}
+
+#skillBoxes::-webkit-scrollbar {
+  width: 0px;
+}
+.skillBox {
+  width: 100px;
+  height: 130px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  padding: 15px;
+  margin: 5px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;;
+}
+.skillBox p{
+  margin-top: 5px;
+}
+/*============================================================= project ==============================================================*/
+#Experience{
+  background-color: var(--secondary);
+}
+
+/*============================================================= project ==============================================================*/
+#project {
+  background-color: var(--subMain);
+  color: var(--obejective);
+}
+#projectContent {
+  flex-direction: column;
+  height: 100vh;
+}
+
+.projectHead {
+  text-align: center;
+  margin-block: 10px;
+  
+}
+
+#projectsBoxes {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  font-size: 13px;
+  overflow: scroll;
+
+  height: 70%;
+}
+
+#projectsBoxes::-webkit-scrollbar {
+  width: 0px;
+}
+
+.projectBox {
+  width: 300px;
+  height: 200px;
+  margin: 5px;
+  box-shadow: rgba(18, 105, 18, 0.24) 0px 3px 8px;
+}
+
+.ProjectImg img{
+  width: 300px;
+  height: 200px;
+}
+
+.projectBox h4 {
+  font-size: 15px;
+  color: var(--obejective);
+  margin-inline: 10px;
+}
+
+.projectBox p {
+  color: #a7adbb;
+  margin-bottom: 5px;
+  margin-inline: 10px;
+}
+
+.projectBox span {
+  padding-inline: 5px;
+  margin-left: 10px;
+}
+
+.projectBox .l1 {
+  background-color: var(--functionSec);
+}
+
+.projectBox .l2 {
+  background-color: var(--valueMain);
+}
+
+.projectBox .l3 {
+  background-color: var(--curly);
+}
+
+/*============================================================= canvas ==============================================================*/
+canvas{
+  width: 90%;
+  height: 90%;
+  padding: 20px;
+  background-color: var(--hoverClr);
+}
+/*============================================================= contact me ==============================================================*/
+#contactMe {
+  background-color: var(--secondary);
+  color: white;
+}
+
+.innerContent {
+  flex-direction: column;
+}
+
+#form_mail {
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+}
+
+#form_mail textarea {
+  resize: none;
+}
+
+.formButton {
+  margin-block: 5px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.formButton button {
+  width: 49%;
+  padding: 8px 20px;
+  border: none;
+  background: none;
+  color: var(--subMain);
+}
+
+
+
+#sendbtn {
+  background-color: var(--main);
+}
+
+#clearbtn {
+  background-color: var(--tertiary);
+}
+.formButton button:hover{
+  color: var(--obejective);
+}
+
+/*============================================================= footer ==============================================================*/
+footer {
+  font-size: 12px;
+  color: var(--hoverClr);
+  background-color: var(--obejective);
+}
